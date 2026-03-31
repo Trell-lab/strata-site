@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STRATA — Strategic Revenue Architecture</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800;900&family=DM+Sans:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <style>
     :root {
       --gold: #c9a84c;
@@ -26,8 +29,16 @@
       --nav-h: 84px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'DM Sans', sans-serif;
       color: var(--text);
@@ -35,10 +46,18 @@
       overflow-x: hidden;
     }
 
-    body.modal-open { overflow: hidden; }
+    body.modal-open {
+      overflow: hidden;
+    }
 
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
 
     .container {
       width: min(calc(100% - 40px), var(--max));
@@ -336,8 +355,8 @@
 
     .texture-light {
       background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.95), rgba(255,255,255,0.84) 32%, rgba(247,244,237,0.98) 64%),
-        linear-gradient(180deg, rgba(201,168,76,0.06), rgba(255,255,255,0));
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.84) 32%, rgba(247, 244, 237, 0.98) 64%),
+        linear-gradient(180deg, rgba(201, 168, 76, 0.06), rgba(255, 255, 255, 0));
     }
 
     .texture-dark {
@@ -405,7 +424,7 @@
 
     .hero-visual {
       background:
-        linear-gradient(180deg, rgba(8,17,28,0.18), rgba(8,17,28,0.52)),
+        linear-gradient(180deg, rgba(8, 17, 28, 0.18), rgba(8, 17, 28, 0.52)),
         radial-gradient(circle at 30% 18%, rgba(255, 219, 128, 0.15), transparent 18%),
         linear-gradient(180deg, #223447 0%, #162437 46%, #0b1623 100%);
     }
@@ -415,8 +434,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, transparent 0 52%, rgba(247,244,237,0.08) 52% 53%, transparent 53% 100%),
-        linear-gradient(transparent 0 76%, rgba(247,244,237,0.12) 76% 77%, transparent 77% 100%);
+        linear-gradient(90deg, transparent 0 52%, rgba(247, 244, 237, 0.08) 52% 53%, transparent 53% 100%),
+        linear-gradient(transparent 0 76%, rgba(247, 244, 237, 0.12) 76% 77%, transparent 77% 100%);
     }
 
     .portrait-card,
@@ -438,7 +457,7 @@
       width: min(420px, 72%);
       aspect-ratio: 0.78;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
         radial-gradient(circle at 50% 18%, rgba(255, 220, 145, 0.35), transparent 18%),
         linear-gradient(180deg, #203447 0%, #112131 44%, #09131d 100%);
       overflow: hidden;
@@ -448,13 +467,13 @@
     .portrait-card::after {
       content: '';
       position: absolute;
-      background: rgba(247,244,237,0.08);
+      background: rgba(247, 244, 237, 0.08);
     }
 
     .portrait-card::before {
       inset: 16% 18% 12% 52%;
-      border-left: 2px solid rgba(247,244,237,0.22);
-      border-bottom: 2px solid rgba(247,244,237,0.14);
+      border-left: 2px solid rgba(247, 244, 237, 0.22);
+      border-bottom: 2px solid rgba(247, 244, 237, 0.14);
       background: transparent;
     }
 
@@ -492,7 +511,9 @@
       color: rgba(247, 244, 237, 0.66);
     }
 
-    .qualification-steps span.is-active { color: #fff; }
+    .qualification-steps span.is-active {
+      color: #fff;
+    }
 
     .qual-progress {
       margin-top: 16px;
@@ -521,7 +542,7 @@
     .tab-btn {
       border: none;
       background: transparent;
-      color: rgba(247,244,237,0.5);
+      color: rgba(247, 244, 237, 0.5);
       font-size: 0.76rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -538,7 +559,7 @@
 
     .problem-visual {
       background:
-        linear-gradient(180deg, rgba(9,18,28,0.18), rgba(9,18,28,0.4)),
+        linear-gradient(180deg, rgba(9, 18, 28, 0.18), rgba(9, 18, 28, 0.4)),
         radial-gradient(circle at 45% 18%, rgba(115, 137, 255, 0.18), transparent 22%),
         linear-gradient(180deg, #1d255d 0%, #15224b 44%, #101b38 100%);
     }
@@ -548,7 +569,7 @@
       right: 10%;
       top: 18%;
       width: min(360px, 68%);
-      border-left: 1px solid rgba(201,168,76,0.28);
+      border-left: 1px solid rgba(201, 168, 76, 0.28);
       padding-left: 28px;
     }
 
@@ -568,7 +589,7 @@
     }
 
     .floating-card {
-      background: rgba(247,244,237,0.78);
+      background: rgba(247, 244, 237, 0.78);
       color: var(--text);
       padding: 24px;
       display: grid;
@@ -580,7 +601,7 @@
     .floating-num {
       font-family: 'Playfair Display', serif;
       font-size: 3.2rem;
-      color: rgba(201,168,76,0.82);
+      color: rgba(201, 168, 76, 0.82);
       line-height: 1;
     }
 
@@ -606,7 +627,7 @@
     }
 
     .list-row {
-      background: rgba(255,255,255,0.78);
+      background: rgba(255, 255, 255, 0.78);
       padding: 24px 26px;
       display: grid;
       grid-template-columns: auto 1fr;
@@ -614,12 +635,15 @@
       transition: background 180ms ease, transform 180ms ease;
     }
 
-    .list-row:hover { background: #fff; transform: translateX(4px); }
+    .list-row:hover {
+      background: #fff;
+      transform: translateX(4px);
+    }
 
     .list-num {
       font-family: 'Playfair Display', serif;
       font-size: 3.2rem;
-      color: rgba(201,168,76,0.84);
+      color: rgba(201, 168, 76, 0.84);
       line-height: 0.9;
     }
 
@@ -643,7 +667,7 @@
     }
 
     .list-tags span {
-      border: 1px solid rgba(201,168,76,0.24);
+      border: 1px solid rgba(201, 168, 76, 0.24);
       color: var(--gold);
       border-radius: 999px;
       padding: 0.38rem 0.78rem;
@@ -653,7 +677,7 @@
 
     .method-visual {
       background:
-        linear-gradient(180deg, rgba(9,18,28,0.08), rgba(9,18,28,0.45)),
+        linear-gradient(180deg, rgba(9, 18, 28, 0.08), rgba(9, 18, 28, 0.45)),
         radial-gradient(circle at 68% 22%, rgba(255, 230, 159, 0.1), transparent 18%),
         linear-gradient(180deg, #18273a 0%, #0f1825 100%);
     }
@@ -665,7 +689,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: rgba(201,168,76,0.12);
+      background: rgba(201, 168, 76, 0.12);
     }
 
     .method-pill {
@@ -678,18 +702,24 @@
     }
 
     .method-pill:nth-child(1) {
-      background: rgba(247,244,237,0.95);
+      background: rgba(247, 244, 237, 0.95);
       color: var(--ink);
     }
 
     .method-pill:nth-child(1) .card-copy,
     .method-pill:nth-child(1) .small-label,
     .method-pill:nth-child(1) .outcome-note,
-    .method-pill:nth-child(1) .card-title { color: var(--ink); }
+    .method-pill:nth-child(1) .card-title {
+      color: var(--ink);
+    }
 
-    .method-pill:nth-child(1) .small-label { opacity: 0.7; }
+    .method-pill:nth-child(1) .small-label {
+      opacity: 0.7;
+    }
 
-    .method-pill .floating-num { font-size: 4.4rem; }
+    .method-pill .floating-num {
+      font-size: 4.4rem;
+    }
 
     .split-heading {
       font-family: 'Playfair Display', serif;
@@ -699,7 +729,7 @@
     }
 
     .outcome-note {
-      color: rgba(247,244,237,0.76);
+      color: rgba(247, 244, 237, 0.76);
       line-height: 1.7;
       margin-top: 16px;
       max-width: 18ch;
@@ -722,7 +752,7 @@
     .metric-frame {
       inset: auto;
       position: relative;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       padding: 22px;
       border-radius: 20px;
     }
@@ -731,14 +761,14 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: rgba(201,168,76,0.12);
+      background: rgba(201, 168, 76, 0.12);
       border-radius: 20px;
       overflow: hidden;
       box-shadow: var(--shadow);
     }
 
     .metric-card {
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       padding: 34px 24px;
       min-height: 170px;
       display: flex;
@@ -761,15 +791,15 @@
     }
 
     .case-block {
-      border: 1px solid rgba(201,168,76,0.16);
+      border: 1px solid rgba(201, 168, 76, 0.16);
       border-radius: 20px;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       overflow: hidden;
     }
 
     .case-head {
       padding: 20px 24px;
-      border-bottom: 1px solid rgba(201,168,76,0.1);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.1);
       color: var(--gold-soft);
       font-size: 0.78rem;
       letter-spacing: 0.2em;
@@ -780,11 +810,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1px;
-      background: rgba(201,168,76,0.08);
+      background: rgba(201, 168, 76, 0.08);
     }
 
     .case-col {
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
       padding: 24px;
     }
 
@@ -793,7 +823,7 @@
       font-size: 0.78rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(247,244,237,0.62);
+      color: rgba(247, 244, 237, 0.62);
     }
 
     .case-col ul {
@@ -804,7 +834,7 @@
 
     .case-col li {
       line-height: 1.7;
-      color: rgba(247,244,237,0.84);
+      color: rgba(247, 244, 237, 0.84);
       position: relative;
       padding-left: 16px;
     }
@@ -821,12 +851,17 @@
       transform: translateY(-50%);
     }
 
-    .case-col.before li::before { background: rgba(247,244,237,0.3); }
-    .case-col.after li::before { background: var(--gold-soft); }
+    .case-col.before li::before {
+      background: rgba(247, 244, 237, 0.3);
+    }
+
+    .case-col.after li::before {
+      background: var(--gold-soft);
+    }
 
     .results-visual {
       background:
-        linear-gradient(180deg, rgba(7,14,21,0.26), rgba(7,14,21,0.54)),
+        linear-gradient(180deg, rgba(7, 14, 21, 0.26), rgba(7, 14, 21, 0.54)),
         radial-gradient(circle at 74% 18%, rgba(255, 228, 163, 0.18), transparent 18%),
         linear-gradient(180deg, #0d1d2b 0%, #0d1824 100%);
     }
@@ -839,10 +874,10 @@
       aspect-ratio: 0.9;
       border-radius: 22px;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
         radial-gradient(circle at 62% 18%, rgba(255, 216, 134, 0.3), transparent 18%),
         linear-gradient(180deg, #3a2e23 0%, #221814 100%);
-      border: 1px solid rgba(201,168,76,0.18);
+      border: 1px solid rgba(201, 168, 76, 0.18);
       box-shadow: var(--shadow);
     }
 
@@ -851,7 +886,7 @@
       position: absolute;
       inset: 12% 12% auto 12%;
       height: 44%;
-      border: 1px solid rgba(201,168,76,0.35);
+      border: 1px solid rgba(201, 168, 76, 0.35);
     }
 
     .mistake-wrap {
@@ -868,37 +903,45 @@
 
     .mistake-card {
       position: relative;
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       padding: 22px;
       min-height: 180px;
     }
 
     .mistake-card.solution {
-      background: rgba(201,168,76,0.08);
+      background: rgba(201, 168, 76, 0.08);
     }
 
     .icon-badge {
       width: 38px;
       height: 38px;
       border-radius: 50%;
-      border: 1px solid rgba(201,168,76,0.24);
+      border: 1px solid rgba(201, 168, 76, 0.24);
       display: inline-grid;
       place-items: center;
       margin-bottom: 16px;
     }
 
-    .icon-badge.x { border-color: rgba(255, 118, 118, 0.28); }
+    .icon-badge.x {
+      border-color: rgba(255, 118, 118, 0.28);
+    }
+
     .icon-badge.x::before,
     .icon-badge.x::after {
       content: '';
       position: absolute;
       width: 14px;
       height: 1.5px;
-      background: rgba(255,118,118,0.76);
+      background: rgba(255, 118, 118, 0.76);
     }
 
-    .icon-badge.x::before { transform: rotate(45deg); }
-    .icon-badge.x::after { transform: rotate(-45deg); }
+    .icon-badge.x::before {
+      transform: rotate(45deg);
+    }
+
+    .icon-badge.x::after {
+      transform: rotate(-45deg);
+    }
 
     .icon-badge.check::before {
       content: '';
@@ -920,12 +963,14 @@
       text-transform: uppercase;
     }
 
-    .phase-rail .active { color: var(--gold-soft); }
+    .phase-rail .active {
+      color: var(--gold-soft);
+    }
 
     .why-visual {
       background:
-        linear-gradient(180deg, rgba(8,17,28,0.2), rgba(8,17,28,0.56)),
-        radial-gradient(circle at 26% 12%, rgba(255,255,255,0.08), transparent 18%),
+        linear-gradient(180deg, rgba(8, 17, 28, 0.2), rgba(8, 17, 28, 0.56)),
+        radial-gradient(circle at 26% 12%, rgba(255, 255, 255, 0.08), transparent 18%),
         linear-gradient(180deg, #0b131d 0%, #101c29 100%);
     }
 
@@ -933,8 +978,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, transparent 0 12%, rgba(247,244,237,0.07) 12% 13%, transparent 13% 38%, rgba(247,244,237,0.07) 38% 39%, transparent 39% 100%),
-        linear-gradient(transparent 0 24%, rgba(201,168,76,0.12) 24% 24.3%, transparent 24.3% 70%, rgba(201,168,76,0.12) 70% 70.3%, transparent 70.3% 100%);
+        linear-gradient(90deg, transparent 0 12%, rgba(247, 244, 237, 0.07) 12% 13%, transparent 13% 38%, rgba(247, 244, 237, 0.07) 38% 39%, transparent 39% 100%),
+        linear-gradient(transparent 0 24%, rgba(201, 168, 76, 0.12) 24% 24.3%, transparent 24.3% 70%, rgba(201, 168, 76, 0.12) 70% 70.3%, transparent 70.3% 100%);
       opacity: 0.9;
     }
 
@@ -955,15 +1000,15 @@
       width: 14px;
       height: 14px;
       border-radius: 50%;
-      background: rgba(201,168,76,0.22);
-      border: 1px solid rgba(201,168,76,0.34);
-      box-shadow: inset 0 0 0 4px rgba(201,168,76,0.88);
+      background: rgba(201, 168, 76, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.34);
+      box-shadow: inset 0 0 0 4px rgba(201, 168, 76, 0.88);
       flex-shrink: 0;
     }
 
     .partner-visual {
       background:
-        linear-gradient(180deg, rgba(9,18,28,0.18), rgba(9,18,28,0.44)),
+        linear-gradient(180deg, rgba(9, 18, 28, 0.18), rgba(9, 18, 28, 0.44)),
         radial-gradient(circle at 72% 18%, rgba(255, 221, 142, 0.16), transparent 18%),
         linear-gradient(180deg, #1b2029 0%, #0f151d 100%);
     }
@@ -974,7 +1019,7 @@
       width: min(480px, 76%);
       aspect-ratio: 0.92;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
         radial-gradient(circle at 50% 18%, rgba(255, 222, 150, 0.16), transparent 18%),
         linear-gradient(180deg, #2b313b 0%, #121922 100%);
       overflow: hidden;
@@ -985,10 +1030,10 @@
       position: absolute;
       inset: 18% 18% 18% 18%;
       background:
-        conic-gradient(from 90deg, rgba(247,244,237,0.05) 0 25%, rgba(247,244,237,0.12) 25% 50%, rgba(247,244,237,0.05) 50% 75%, rgba(247,244,237,0.12) 75% 100%);
-      border: 1px solid rgba(201,168,76,0.22);
+        conic-gradient(from 90deg, rgba(247, 244, 237, 0.05) 0 25%, rgba(247, 244, 237, 0.12) 25% 50%, rgba(247, 244, 237, 0.05) 50% 75%, rgba(247, 244, 237, 0.12) 75% 100%);
+      border: 1px solid rgba(201, 168, 76, 0.22);
       transform: perspective(1000px) rotateX(62deg);
-      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
     }
 
     .partner-frame::after {
@@ -996,8 +1041,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, transparent 0 86%, rgba(247,244,237,0.16) 86% 86.3%, transparent 86.3% 100%),
-        linear-gradient(transparent 0 78%, rgba(201,168,76,0.18) 78% 78.3%, transparent 78.3% 100%);
+        linear-gradient(90deg, transparent 0 86%, rgba(247, 244, 237, 0.16) 86% 86.3%, transparent 86.3% 100%),
+        linear-gradient(transparent 0 78%, rgba(201, 168, 76, 0.18) 78% 78.3%, transparent 78.3% 100%);
     }
 
     .trusted-note {
@@ -1009,7 +1054,7 @@
       font-size: 0.74rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(247,244,237,0.48);
+      color: rgba(247, 244, 237, 0.48);
     }
 
     .reveal {
@@ -1035,15 +1080,17 @@
       padding: 20px;
     }
 
-    .modal-overlay.active { display: flex; }
+    .modal-overlay.active {
+      display: flex;
+    }
 
     .modal {
       position: relative;
       width: min(100%, 560px);
       background: #fff;
       border-radius: 24px;
-      border: 1px solid rgba(201,168,76,0.2);
-      box-shadow: 0 30px 70px rgba(8,17,28,0.28);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      box-shadow: 0 30px 70px rgba(8, 17, 28, 0.28);
       padding: 28px;
     }
 
@@ -1054,7 +1101,7 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      border: 1px solid rgba(8,17,28,0.08);
+      border: 1px solid rgba(8, 17, 28, 0.08);
       background: #fff;
       color: var(--muted);
       cursor: pointer;
@@ -1084,7 +1131,7 @@
     .field-select,
     .field-textarea {
       width: 100%;
-      border: 1px solid rgba(8,17,28,0.1);
+      border: 1px solid rgba(8, 17, 28, 0.1);
       border-radius: 14px;
       padding: 0.96rem 1rem;
       font: inherit;
@@ -1093,14 +1140,17 @@
       transition: border-color 180ms ease, box-shadow 180ms ease;
     }
 
-    .field-textarea { min-height: 120px; resize: vertical; }
+    .field-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
 
     .field:focus,
     .field-select:focus,
     .field-textarea:focus {
       outline: none;
-      border-color: rgba(201,168,76,0.56);
-      box-shadow: 0 0 0 4px rgba(201,168,76,0.12);
+      border-color: rgba(201, 168, 76, 0.56);
+      box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.12);
     }
 
     .modal-actions {
@@ -1139,8 +1189,8 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      border: 1px solid rgba(8,17,28,0.1);
-      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(8, 17, 28, 0.1);
+      background: rgba(255, 255, 255, 0.6);
       cursor: pointer;
       place-items: center;
     }
@@ -1164,14 +1214,24 @@
       left: 0;
     }
 
-    .mobile-menu span::before { top: -6px; }
-    .mobile-menu span::after { top: 6px; }
+    .mobile-menu span::before {
+      top: -6px;
+    }
+
+    .mobile-menu span::after {
+      top: 6px;
+    }
 
     @media (max-width: 1080px) {
-      .panel-inner,
-      .results-board { grid-template-columns: 1fr; }
 
-      .right { min-height: 540px; }
+      .panel-inner,
+      .results-board {
+        grid-template-columns: 1fr;
+      }
+
+      .right {
+        min-height: 540px;
+      }
 
       .method-columns,
       .problem-stack,
@@ -1191,7 +1251,9 @@
 
       .mistake-row,
       .metric-grid,
-      .case-cols { grid-template-columns: 1fr; }
+      .case-cols {
+        grid-template-columns: 1fr;
+      }
 
       .panel-progress {
         position: static;
@@ -1200,10 +1262,17 @@
     }
 
     @media (max-width: 840px) {
-      :root { --nav-h: 74px; }
+      :root {
+        --nav-h: 74px;
+      }
 
-      .site-nav .container { gap: 12px; }
-      .mobile-menu { display: grid; }
+      .site-nav .container {
+        gap: 12px;
+      }
+
+      .mobile-menu {
+        display: grid;
+      }
 
       .nav-links {
         position: fixed;
@@ -1213,8 +1282,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        background: rgba(247,244,237,0.98);
-        border: 1px solid rgba(201,168,76,0.16);
+        background: rgba(247, 244, 237, 0.98);
+        border: 1px solid rgba(201, 168, 76, 0.16);
         border-radius: 20px;
         padding: 20px;
         box-shadow: var(--shadow);
@@ -1242,10 +1311,14 @@
       }
 
       .left,
-      .partnership-left { padding: 34px 24px 26px; }
+      .partnership-left {
+        padding: 34px 24px 26px;
+      }
 
       .display,
-      .headline { max-width: 14ch; }
+      .headline {
+        max-width: 14ch;
+      }
 
       .method-columns {
         position: relative;
@@ -1255,7 +1328,9 @@
         margin: 24px auto 0;
       }
 
-      .method-pill { min-height: 280px; }
+      .method-pill {
+        min-height: 280px;
+      }
 
       .problem-stack,
       .problem-quote,
@@ -1279,10 +1354,24 @@
         width: auto;
       }
 
-      .portrait-card { right: 6%; left: 20%; width: auto; }
-      .glass-card { left: 6%; right: 16%; width: auto; }
+      .portrait-card {
+        right: 6%;
+        left: 20%;
+        width: auto;
+      }
+
+      .glass-card {
+        left: 6%;
+        right: 16%;
+        width: auto;
+      }
+
       .results-portrait,
-      .partner-frame { left: 8%; right: 8%; width: auto; }
+      .partner-frame {
+        left: 8%;
+        right: 8%;
+        width: auto;
+      }
 
       .panel-progress {
         flex-wrap: wrap;
@@ -1292,40 +1381,85 @@
     }
 
     @media (max-width: 560px) {
-      .container { width: min(calc(100% - 24px), var(--max)); }
+      .container {
+        width: min(calc(100% - 24px), var(--max));
+      }
 
-      .brand-mark { font-size: 1.28rem; }
-      .brand-sub { font-size: 0.54rem; letter-spacing: 0.18em; }
+      .brand-mark {
+        font-size: 1.28rem;
+      }
 
-      .display { font-size: clamp(2.2rem, 12vw, 3.4rem); }
-      .headline { font-size: clamp(1.9rem, 9vw, 2.7rem); }
-      .body-copy { font-size: 0.95rem; }
+      .brand-sub {
+        font-size: 0.54rem;
+        letter-spacing: 0.18em;
+      }
+
+      .display {
+        font-size: clamp(2.2rem, 12vw, 3.4rem);
+      }
+
+      .headline {
+        font-size: clamp(1.9rem, 9vw, 2.7rem);
+      }
+
+      .body-copy {
+        font-size: 0.95rem;
+      }
 
       .btn,
       .ghost-btn,
-      .nav-cta { width: 100%; justify-content: center; }
+      .nav-cta {
+        width: 100%;
+        justify-content: center;
+      }
 
       .actions,
-      .modal-actions { flex-direction: column; align-items: stretch; }
+      .modal-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
 
-      .right { min-height: 460px; }
+      .right {
+        min-height: 460px;
+      }
+
       .glass-card,
       .floating-card,
       .metric-frame,
       .mistake-card,
       .partner-frame,
-      .portrait-card { border-radius: 18px; }
+      .portrait-card {
+        border-radius: 18px;
+      }
 
-      .glass-card { padding: 18px; }
-      .problem-stack { gap: 10px; }
-      .floating-card { padding: 18px; }
-      .list-row { padding: 20px; }
-      .metric-card { min-height: 148px; }
+      .glass-card {
+        padding: 18px;
+      }
+
+      .problem-stack {
+        gap: 10px;
+      }
+
+      .floating-card {
+        padding: 18px;
+      }
+
+      .list-row {
+        padding: 20px;
+      }
+
+      .metric-card {
+        min-height: 148px;
+      }
+
       .case-col,
-      .mistake-card { padding: 20px; }
+      .mistake-card {
+        padding: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header class="site-nav">
     <div class="container">
@@ -1345,7 +1479,8 @@
 
       <div class="nav-right">
         <button class="nav-cta" type="button" data-open-modal>Apply for Review</button>
-        <button class="mobile-menu" type="button" id="mobileMenu" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <button class="mobile-menu" type="button" id="mobileMenu" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="navLinks">
           <span></span>
         </button>
       </div>
@@ -1358,7 +1493,8 @@
         <div class="left reveal">
           <div class="eyebrow">Revenue Qualification</div>
           <h1 class="display">Build Revenue Infrastructure. Not Just Visibility.</h1>
-          <p class="body-copy">We design structured growth systems for founders ready to scale intelligently — with narrative, qualification, positioning, and conversion architecture built into every step.</p>
+          <p class="body-copy">We design structured growth systems for founders ready to scale intelligently — with
+            narrative, qualification, positioning, and conversion architecture built into every step.</p>
           <div class="rule"></div>
           <div class="actions">
             <button class="btn" type="button" data-open-modal>Apply for Strategy Review →</button>
@@ -1401,28 +1537,32 @@
         <div class="left reveal">
           <div class="eyebrow">Revenue Audit Snapshot</div>
           <h2 class="headline">Most Brands Don’t Have a Revenue System. They Have Activity.</h2>
-          <p class="body-copy">More motion does not equal more momentum. Without structure, lead quality, market fit, pricing, and conversion logic stay disconnected.</p>
+          <p class="body-copy">More motion does not equal more momentum. Without structure, lead quality, market fit,
+            pricing, and conversion logic stay disconnected.</p>
 
           <div class="list-grid reveal">
             <article class="list-row">
               <div class="list-num">01</div>
               <div>
                 <h3 class="list-heading">Revenue Without Structure</h3>
-                <p class="list-copy">Income appears, but there is no system underneath it to stabilize, diagnose, or multiply what is already working.</p>
+                <p class="list-copy">Income appears, but there is no system underneath it to stabilize, diagnose, or
+                  multiply what is already working.</p>
               </div>
             </article>
             <article class="list-row">
               <div class="list-num">02</div>
               <div>
                 <h3 class="list-heading">Traffic Without Qualification</h3>
-                <p class="list-copy">Leads arrive, but lack readiness, decision authority, or strategic alignment with your actual offer architecture.</p>
+                <p class="list-copy">Lead arrive, but lack readiness, decision authority, or strategic alignment with
+                  your actual offer architecture.</p>
               </div>
             </article>
             <article class="list-row">
               <div class="list-num">03</div>
               <div>
                 <h3 class="list-heading">Visibility Without Conversion Logic</h3>
-                <p class="list-copy">Attention gets captured, but there is no coherent pathway turning interest into pipeline, retainers, or predictable revenue.</p>
+                <p class="list-copy">Attention gets captured, but there is no coherent pathway turning interest into
+                  pipeline, retainers, or predictable revenue.</p>
               </div>
             </article>
           </div>
@@ -1431,7 +1571,8 @@
         <div class="right texture-dark">
           <div class="problem-visual"></div>
           <div class="problem-quote reveal">
-            <div class="quote-block">We don’t amplify activity. <span style="color:var(--gold-soft);display:block;">We architect revenue.</span></div>
+            <div class="quote-block">We don’t amplify activity. <span style="color:var(--gold-soft);display:block;">We
+                architect revenue.</span></div>
           </div>
           <div class="problem-stack reveal">
             <article class="floating-card">
@@ -1464,7 +1605,8 @@
         <div class="left reveal">
           <div class="eyebrow">Architecture Before Acceleration</div>
           <h2 class="headline">Build the System Before You Push for Scale.</h2>
-          <p class="body-copy">Our method is built to surface bottlenecks, engineer a more qualified growth path, and create structure that compounds rather than leaks.</p>
+          <p class="body-copy">Our method is built to surface bottlenecks, engineer a more qualified growth path, and
+            create structure that compounds rather than leaks.</p>
           <div class="actions">
             <button class="btn" type="button" data-scroll="#results">See measured impact →</button>
           </div>
@@ -1477,7 +1619,8 @@
               <div>
                 <div class="floating-num">01</div>
                 <div class="split-heading">Diagnose</div>
-                <p class="outcome-note">Pinpoint what is stalling growth through a forensic audit of marketing, qualification, and revenue flow.</p>
+                <p class="outcome-note">Pinpoint what is stalling growth through a forensic audit of marketing,
+                  qualification, and revenue flow.</p>
               </div>
               <div class="list-tags">
                 <span>Silos</span>
@@ -1489,7 +1632,8 @@
               <div>
                 <div class="floating-num">02</div>
                 <div class="split-heading">Architect</div>
-                <p class="outcome-note">Build a custom blueprint around positioning, offer logic, demand capture, and conversion structure.</p>
+                <p class="outcome-note">Build a custom blueprint around positioning, offer logic, demand capture, and
+                  conversion structure.</p>
               </div>
               <div class="list-tags">
                 <span>Strategy Frameworks</span>
@@ -1499,7 +1643,8 @@
               <div>
                 <div class="floating-num">03</div>
                 <div class="split-heading">Deploy</div>
-                <p class="outcome-note">Roll out, refine, and optimize with a repeatable execution model built for more predictable outcomes.</p>
+                <p class="outcome-note">Roll out, refine, and optimize with a repeatable execution model built for more
+                  predictable outcomes.</p>
               </div>
               <div class="list-tags">
                 <span>Rollout Optimization</span>
@@ -1521,7 +1666,8 @@
         <div class="left reveal">
           <div class="eyebrow">Measured Growth</div>
           <h2 class="headline">Proven Impact. Predictable Results.</h2>
-          <p class="body-copy">Strategic growth is measurable when the underlying system is engineered to qualify, convert, and compound.</p>
+          <p class="body-copy">Strategic growth is measurable when the underlying system is engineered to qualify,
+            convert, and compound.</p>
           <div class="actions">
             <button class="btn" type="button" data-open-modal>Apply for Strategy Review →</button>
           </div>
@@ -1590,7 +1736,8 @@
         <div class="left reveal">
           <div class="eyebrow">Common Mistakes</div>
           <h2 class="headline">Why Most Growth Efforts Fail.</h2>
-          <p class="body-copy">Chaotic marketing and scattered tactics are usually symptoms of missing architecture — not missing effort.</p>
+          <p class="body-copy">Chaotic marketing and scattered tactics are usually symptoms of missing architecture —
+            not missing effort.</p>
 
           <div class="mistake-wrap reveal">
             <div>
@@ -1663,7 +1810,8 @@
         <div class="left reveal">
           <div class="eyebrow">Selective Growth Partnerships</div>
           <h2 class="headline">Selective Growth Partnerships.</h2>
-          <p class="body-copy">We architect systems for a limited number of brands each quarter. This is not packaged marketing. It is built, pressure-tested, and deployed around the right growth constraints.</p>
+          <p class="body-copy">We architect systems for a limited number of brands each quarter. This is not packaged
+            marketing. It is built, pressure-tested, and deployed around the right growth constraints.</p>
           <div class="partner-checklist">
             <div class="check-item"><span class="check-dot"></span><span>Revenue audit &amp; qualification</span></div>
             <div class="check-item"><span class="check-dot"></span><span>Custom system blueprint</span></div>
@@ -1674,7 +1822,9 @@
             <button class="ghost-btn" type="button" data-scroll="#hero">Back to top ↑</button>
           </div>
           <p class="micro">Limited partnerships. By approval only.</p>
-          <p class="body-copy" style="margin-top:20px;font-family:'Playfair Display',serif;color:var(--gold);font-style:italic;line-height:1.45;">We don’t do marketing. We architect revenue.</p>
+          <p class="body-copy"
+            style="margin-top:20px;font-family:'Playfair Display',serif;color:var(--gold);font-style:italic;line-height:1.45;">
+            We don’t do marketing. We architect revenue.</p>
         </div>
 
         <div class="right texture-dark">
@@ -1697,7 +1847,8 @@
       <button class="modal-close" type="button" id="modalClose" aria-label="Close application form">✕</button>
       <div id="modalContent">
         <h3 class="modal-title" id="modalTitle">Apply for Strategy Review</h3>
-        <p class="modal-text">Selective partnerships. We review every application personally and only move forward where there is clear strategic fit.</p>
+        <p class="modal-text">Selective partnerships. We review every application personally and only move forward where
+          there is clear strategic fit.</p>
         <form class="form-grid" id="applicationForm">
           <input class="field" type="text" name="name" placeholder="Full Name" required>
           <input class="field" type="email" name="email" placeholder="Business Email" required>
@@ -1709,7 +1860,8 @@
             <option>$50k – $200k</option>
             <option>$200k+</option>
           </select>
-          <textarea class="field-textarea" name="focus" placeholder="What revenue constraint are you trying to solve?" required></textarea>
+          <textarea class="field-textarea" name="focus" placeholder="What revenue constraint are you trying to solve?"
+            required></textarea>
           <div class="modal-actions">
             <button class="btn" type="submit">Submit Application →</button>
             <span class="modal-note">Limited capacity per quarter. By approval only.</span>
@@ -1866,4 +2018,5 @@
     });
   </script>
 </body>
+
 </html>
